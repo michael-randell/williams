@@ -1,0 +1,9 @@
+<h1 class="page_title">Say Hello!</h1>
+<%= form_for @contact do |f| %>
+  <%= @contact.errors.full_messages.join(', ') %>
+
+  <%= f.text_field :name, placeholder: 'name', required: true %>
+  <%= f.email_field :email, placeholder: 'email', required: true %>
+  <%= f.text_area :message, placeholder: 'please give us all the details of your job' %>
+  <%= f.submit 'Send' %>
+<% end %>
