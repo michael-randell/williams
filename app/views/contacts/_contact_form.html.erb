@@ -1,0 +1,20 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h1 class="modal-title">Send us a message!</h1>
+    </div>
+    <div class="modal-body">
+      <h4 class="page_title">Please provide us with details!</h4>
+      <%= form_for @contact, remote: true, :html=> {:class => 'form-group'} do |f| %>
+        <%= @contact.errors.full_messages.join(', ') %>
+
+        <%= f.text_field :name, placeholder: 'name', required: true, class: 'form-control' %>
+        <%= f.telephone_field :phone, placeholder: 'phone number', required: true, class: 'form-control' %>
+        <%= f.email_field :email, placeholder: 'email', required: true, class: 'form-control' %>
+        <%= f.text_area :message, placeholder: 'please provide us with all the details of your inquiry', class: 'form-control' %>
+        <%= f.submit 'Send', class: 'btn btn-default'%>
+      <% end %>
+    </div>
+  </div>
+</div>

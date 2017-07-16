@@ -9,7 +9,6 @@
             </button>
             <a class="navbar-brand" href="#">561-967-1591</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
@@ -23,13 +22,10 @@
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
 
-<!-- Image Background Page Header -->
-<!-- Note: The background image is set within the business-casual.css file. -->
+
 <header class="business-header">
     <div class="container">
         <div class="row">
@@ -55,7 +51,16 @@
             <p>We take care of your sodding needs from the planning stage to implementation. In the process, we are guided by your individual wishes, needs and interests, as well as the landscape's character. Resulting in a harmonious concept. And most importantly, when it comes to our product, <b class="red">we always prioritize quality.</b></p>
             <p>We are a family business and have been based out of West Palm Beach for over 50 years, serving all of South Florida.  We are extremely familiar with the needs of the Local Residents, Builders and Landscapers for quality sod and dependable service. No job is too big or too small, for both commerial and residential projects.</p>
             <p>
-                <a class="btn btn-default btn-lg" href="#">Schedule a Free Estimate &raquo;</a>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+              <div id="myModal" class="modal fade" role="dialog">
+                <%= render :partial => 'contacts/contact_form' %>
+              </div>
+              <div id="successModal" class="modal fade" role="dialog">
+                <%= render :partial => 'contacts/success_modal' %>
+              </div>
+              <div id="failModal" class="modal fade" role="dialog">
+                <%= render :partial => 'contacts/success_modal' %>
+              </div>
             </p>
         </div>
         <div class="col-sm-4">
