@@ -4,4 +4,7 @@ class ApplicationController < ActionController::Base
   def root
     @contact = Contact.new
   end
+
+  def services
+  end
 end

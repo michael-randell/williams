@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:create]
 
+  get '/services', to: 'application#services'
+
 end
