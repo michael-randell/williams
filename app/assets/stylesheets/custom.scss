@@ -85,17 +85,23 @@ fieldset[disabled] .btn.active {
 
 .montserrat {
   font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
 }
 
 .red {
   color: #ff0800;
 }
 
+.phone-size {
+  font-size: 200%;
+}
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #dfeccb;
     color: #000000;
 }
+
+
 
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
