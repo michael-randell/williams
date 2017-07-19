@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
     @contact = Contact.new
   end
 
-  def services
+  def gallery
   end
 end

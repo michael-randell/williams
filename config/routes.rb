@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'application#root'
 
-  resources :contacts, only: [:create]
+  get '/gallery', to: 'application#gallery'
 
-  get '/services', to: 'application#services'
+  resources :contacts, only: [:create]
 
 end

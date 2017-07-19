@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require bootstrap-sprockets
 //= require contacts
-// require bootstrap
+//= require bootstrap-sass
+//= require ekko-lightbox
+//= require_tree .
