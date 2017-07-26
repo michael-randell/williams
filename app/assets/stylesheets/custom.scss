@@ -7,6 +7,11 @@
   filter: alpha(opacity=50);*/
 }
 
+.space-gallery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .modal-title {
   text-align: center;
 }
@@ -17,6 +22,10 @@
 
 .red {
   color: #FF0800
+}
+
+.dark-green {
+  color: #118C4E;
 }
 
 .btn {
@@ -31,7 +40,7 @@
 .btn.active,
 .open .dropdown-toggle.btn {
   color: #FFFFFF;
-  background-color: #7CFC00;
+  background-color: #118C4E;
   border-color: #FFFFFF;
 }
 
@@ -66,7 +75,8 @@ fieldset[disabled] .btn.active {
 }
 
 .navbar {
-  background-color: #dfeccb;
+  //background-color: #dfeccb;
+  background-color: #C1E1A6;
 }
 
 .navbar-inverse .navbar-brand {
@@ -95,13 +105,16 @@ fieldset[disabled] .btn.active {
 .phone-size {
   font-size: 200%;
 }
+
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #dfeccb;
+    background-color: #C1E1A6;
     color: #000000;
 }
 
-
+.gallery {
+  background-color: #C1E1A6;
+}
 
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
